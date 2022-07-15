@@ -1,0 +1,566 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(194, 225, 253);
+}
+
+header {
+    background-color:rgba(0, 119, 255, 0.645);
+    position: sticky;
+    top: 0px;
+}
+
+footer {
+    background-color: rgb(0, 119, 255, 0.645);
+}
+
+ /* indux */
+
+.header__nav {
+    display: flex;
+}
+
+.header__logo {
+    display: inline;
+}
+
+.main__titulo--inicio {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+    border: solid 15px rgb(0, 47, 157);
+    background-color: white;
+}
+
+.galeria {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+p {
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px 0 50px 10px;
+    font-style: italic;
+}
+
+.galeria__img--futbol {
+    width: 700px;
+    height: 400px;
+    padding: 15px 15px 50px 20px;
+}
+
+footer {
+    display: grid;
+    grid-template-areas:"indice redes"
+                        " indice derechos";
+}
+.footer__indice {
+    grid-area: indice;
+    padding: 20px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.footer__redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__derechos {
+    font-size: 25px;
+    grid-area: derechos;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 16px;
+}
+
+.footer__logos {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.lista__desordenada {
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 0 20px 30px;
+}
+
+.header__lista {
+    display: flex;
+    list-style: none;
+    padding: 0 16px;
+}
+
+.header__item {
+    padding: 25px;
+}
+
+.header__item:hover {
+    transform:scale(1.1, 1.1);
+    transition: all 1s;
+}
+
+.header__item a {
+    color: rgb(255, 255, 255);
+    text-decoration: dotted;
+    font-size: 20px;
+}
+
+.foto__portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen__foto--portada {
+    width: 1300px;
+    height: 600px;
+    margin: 0px;
+    border: 30px double white;
+    margin: 20px;
+}
+
+/* QUIENES SOMOS */
+
+.main__quienes-somos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.quienes__somos--galeria {
+    height: 250px;
+    width: 250px;
+    padding: 0 0 20px;
+}
+
+.main__titulo--rojo {
+    padding: 0 0 100px 0;
+}
+
+.main__titulo--somos {
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+    text-decoration:underline 10px;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 15px;
+    font-style: italic;
+}
+
+/* GALERIA */
+
+.galeria__grid {
+    display: grid;
+    width: 96vw;
+    height: 120vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 20px 20px 0 20px;
+}
+
+.patada-roja {
+    grid-area: patada-roja;
+    background-image: url("../imagenes/patada-galeria.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.yo-claudio {
+    grid-area: yo-claudio;
+    background-image: url("../imagenes/yoclaudio-galeria.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+}
+
+.patadita {
+    grid-area: patadita;
+    background-image: url("../imagenes/patadita.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.cef {
+    grid-area: cef;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../imagenes/trofeo.png");
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+
+/* FORMATO */
+
+.main__categorias--texto {
+    padding: 0 0 100px 16px;
+    font-size: 25px;
+}
+
+.main__categorias {
+    font-size: 35px;
+    padding: 16px 0 0 16px;
+}
+
+.main__categorias--listas {
+    padding: 0 0 100px 20px;
+    font-size: 25px;
+    list-style: none;
+}
+
+/* FORMULARIO */
+
+.main__titulo--formulario {
+    padding: 20px 0 0 16px;
+    font-size: 35px;
+}
+.titulo--azul {
+    padding: 10px;
+}
+.titulo__azul {
+    font-size: 20px;
+    padding: 10px 0 10px 16px;
+}
+
+.casillero__boton {
+    padding: 20px 0 300px 16px;
+}
+
+/* media querie de tablet */
+@media   (min-width: 576px) and (max-width: 992px) {
+
+                /* BARRA DE NAVEGACION */
+    .header__nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__logo {
+        display: inline;
+        height: 80px;
+        width: 80px;
+    }
+    header {
+        position: static;
+    }
+    .header__lista {
+        flex-direction: column;
+        flex-grow: 0;
+        justify-content: center;
+        align-items: center;
+    }
+                /* FOOTER */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .footer__indice {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        list-style: none;
+    }
+    .footer__redes {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer__derechos {
+        font-size: 25px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+                /* INDEX */
+
+    .imagen__foto--portada {
+        width: 90vw;
+        height: auto;
+        padding: 20px 0 0 0;
+        border: 0px double white;
+        margin: 0px;
+    }
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .galeria__img--futbol {
+        width: 80vw;
+        height: auto;
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+                /* QUIENES SOMOS */
+    .main__quienes-somos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .quienes__somos--galeria {
+        height: 250px;
+        width: 250px;
+        padding: 0 0 20px;
+    }
+
+                /* GALERIA */
+    .galeria__grid {
+        display: grid;
+        width: 96vw;
+        height: 120vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 15px;
+        padding: 20px 0 20px 0;
+    }
+    .patada-roja {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 50vh;
+    }
+    
+    .yo-claudio {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 50vh;
+    }
+    
+    .patadita {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 50vh;
+    }
+    
+    .cef {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 50vh;
+    }
+                /* FORMATO */
+    .main__categorias {
+        font-size: 35px;
+        padding: 16px 0 0 16px;
+    }
+    .main__categorias--listas {
+        padding: 0 0 0 20px;
+        font-size: 25px;
+        list-style: none;
+    }
+    .main__categorias--texto {
+        padding: 0 0 100px 16px;
+        font-size: 25px;
+    }
+                /* CONTACTO */
+    .main__titulo--formulario {
+        padding: 20px 0 0 16px;
+        font-size: 35px;
+    }
+    .titulo--azul {
+        padding: 10px;
+    }
+    .titulo__azul {
+        font-size: 20px;
+        padding: 10px 0 10px 16px;
+    }
+    .casillero__boton {
+        padding: 20px 0 100px 16px;
+    }
+}
+
+/* media querie de celular*/
+@media   (min-width: 320px) and (max-width: 575px) {
+                /* BARRA DE NAVEGACION */
+    .header__nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__lista {
+        flex-direction: column;
+        flex-grow: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__logo {
+        display: inline;
+        height: 70px;
+        width: 70px;
+    }
+
+    header {
+        position: static;
+    }
+                /* GALERIA */
+    .galeria__grid {
+        display: grid;
+        width: 96vw;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 15px;
+        padding: 20px 0 20px 0;
+    }
+    .patada-roja {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 60vh;
+    }
+    .yo-claudio {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 50vh;
+    }
+    .patadita {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 50vh;
+    }
+    .cef {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 50vh;
+    }
+                /* INDEX */
+    .main__titulo--inicio {
+        font-size: 50px;
+        text-align: center;
+        padding: 20px 0;
+        border: solid 15px rgb(0, 47, 157);
+        background-color: white;
+    }
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .imagen__foto--portada {
+        width: 350px;
+        height: auto;
+        padding: 20px 0 0 0;
+        border: 0px double white;
+        margin: 0px;
+    }
+    .galeria__img--futbol {
+        width: 350px;
+        height: auto;
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+                /* QUIENES SOMOS */
+    .main__quienes-somos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .quienes__somos--galeria {
+        height: 250px;
+        width: 250px;
+        padding: 0 0 20px;
+    }
+                /* FORMATO */
+    .main__categorias--texto {
+        padding: 0 0 100px 16px;
+        font-size: 25px;
+    }
+    
+    .main__categorias {
+        font-size: 35px;
+        padding: 16px 0 0 16px;
+    }
+    
+    .main__categorias--listas {
+        padding: 0 0 0 20px;
+        font-size: 25px;
+        list-style: none;
+    }
+                /* CONTACTO */
+    .main__titulo--formulario {
+        padding: 20px 0 0 16px;
+        font-size: 35px;
+    }
+    .titulo--azul {
+        padding: 10px;
+    }
+    .titulo__azul {
+        font-size: 20px;
+        padding: 10px 0 10px 16px;
+    }
+    
+    .casillero__boton {
+        padding: 20px 0 100px 16px;
+    }
+                /* FOOTER */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .footer__indice {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        list-style: none;
+    }
+    .footer__redes {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer__derechos {
+        font-size: 25px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+
