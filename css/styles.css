@@ -90,6 +90,11 @@ footer {
     padding: 20px;
 }
 
+.footer__logos:hover{
+    transform:scale(1.1, 1.1);
+    transition: all 1s;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -115,6 +120,11 @@ a {
 }
 
 .header__item:hover {
+    transform:scale(1.1, 1.1);
+    transition: all 1s;
+}
+
+.footer__item:hover {
     transform:scale(1.1, 1.1);
     transition: all 1s;
 }
