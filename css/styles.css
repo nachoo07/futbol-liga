@@ -9,8 +9,6 @@ body {
 
 header {
     background-color:rgba(0, 119, 255, 0.645);
-    position: sticky;
-    top: 0px;
 }
 
 footer {
@@ -25,6 +23,8 @@ footer {
 
 .header__logo {
     display: inline;
+    height: 80px;
+    width: 80px;
 }
 
 .main__titulo--inicio {
@@ -99,7 +99,6 @@ a {
     text-decoration: none;
     color: black;
     font-size: 20px;
-    padding-bottom: 10px;
 }
 
 .lista__desordenada {
@@ -115,11 +114,8 @@ a {
     padding: 0 16px;
 }
 
-.header__item {
-    padding: 25px;
-}
 
-.header__item:hover {
+.nav-item:hover {
     transform:scale(1.1, 1.1);
     transition: all 1s;
 }
@@ -129,6 +125,12 @@ a {
     transition: all 1s;
 }
 
+.nav {
+    padding-top: 0px;
+}
+.nav-item {
+    padding-left: 15px;
+}
 .header__item a {
     color: rgb(255, 255, 255);
     text-decoration: dotted;
@@ -424,6 +426,13 @@ h2 {
 /* media querie de celular*/
 @media   (min-width: 320px) and (max-width: 575px) {
                 /* BARRA DE NAVEGACION */
+    .nav-item {
+    padding-left: 0px;
+    }
+
+    .nav {
+        padding-top: 20px;
+    }
     .header__nav {
         flex-direction: column;
         justify-content: center;
@@ -436,10 +445,9 @@ h2 {
     }
     .header__logo {
         display: inline;
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
     }
-
     header {
         position: static;
     }
