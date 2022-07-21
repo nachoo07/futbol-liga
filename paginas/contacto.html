@@ -20,42 +20,67 @@
 <body>
 <!-- encabezado de la pagina -->
     <header>
-        <nav class="header__nav"> <!-- barra de navegacion -->
-            <img class="header__logo" src="../imagenes/favicon.ico"> <!-- logo -->
-            <ul class="header__lista">
-                <li class="header__item"> <a href="../index.html">INICIO</a></li>
-                <li class="header__item"> <a href="quienes-somos.html">QUIENES SOMOS</a></li>
-                <li class="header__item"> <a href="galeria.html">GALERIA</a></li>
-                <li class="header__item"> <a href="formato.html">FORMATO</a></li>
-                <li class="header__item"> <a href="contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid" >
+                <a href="../index.html"><img class="header__logo" src="../imagenes/Soccer-Ball-PNG-Pic-Background.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb- mb-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="header__item ala nav" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="header__item ala " href="../paginas/quienes-somos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="header__item ala " href="../paginas/galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="header__item ala " href="../paginas/formato.html">Formato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="header__item ala " href="../paginas/contacto.html">Contacto</a>
+                </li>
         </nav>
     </header>
 <!-- cuerpo de la pagina -->
-    <main>
-        <section>
-            <h1 class="main__titulo--formulario"> Para mayor informacion dejanos tus datos y nosotros te contactamos</h1>
-            <form method="post">
-                <div class="titulo__azul"> <!-- formulario 1 -->
-                    <label> Nombre y Apellido </label>
-                    <input>
+    <main >
+        
+        <section class="formulario__uno">
+            <article>
+                <div>
+                    <h1 class="formulario__texto"> Contactanos</h1>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribi aqui tu comentario"></textarea>
+                    </div>
+                    <div class="d-grid justify-content-center"  >
+                        <button type="button" class="btn btn-outline-success">Enviar</button>
+                    </div>
                 </div>
-                <div class="titulo__azul"> <!-- formulario 2 -->
-                    <label> Email </label>
-                    <input>
-                </div>
-                <div class="titulo__azul"> <!-- formulario 3 -->
-                    <label> Deja Tu Comentario </label>
-                    <textarea></textarea>
-                </div>
-        </section>
-        <section>
-            <div class="casillero__boton"> <!-- casilleros -->
-                <input type="submit" value=" Enviar Formulario">
-                <input type="reset"  value=" Borrar Formulario">
+            </article>
+            <div class="formulario__imagen">
+                <img class="img__formulario" src="../imagenes/sven-kucinic-Z0KjmjxUsKs-unsplash.jpg" alt="imagen cef 18">
             </div>
         </section>
-        </form>
     </main>
 <!-- pie de pagina -->
     <footer>
