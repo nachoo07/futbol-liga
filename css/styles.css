@@ -11,9 +11,7 @@ header {
     background-color:rgba(144, 255, 101, 0.645);
 }
 
-footer {
-    background-color: rgb(0, 119, 255, 0.645);
-}
+
 
  /* indux */
 
@@ -57,40 +55,41 @@ footer {
 } */
 
 
-footer {
-    display: grid;
-    grid-template-areas:"indice redes"
-                        " indice derechos";
-}
-.footer__indice {
+
+/* .footer__indice {
     grid-area: indice;
     padding: 30px;
     list-style: none;
     padding-bottom: 10px;
-}
+} */
 
 a {
     color: white;
     font-size: 20px;
 }
-.footer__redes {
-    grid-area: redes;
-    display: flex;
-    flex-direction: column;
+
+
+
+.ala::after {
+    content: "|";
+    width: 10px;
+    height: auto;
+    padding-left: 6px;
 }
 
-.footer__derechos {
-    font-size: 25px;
-    grid-area: derechos;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 16px;
-}
+
 
 .footer__logos {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.columnas {
+    padding: 0 20px 0 20pxf;
 }
 
 .footer__logos:hover{
@@ -140,6 +139,7 @@ a {
 }
 
 
+
 /* QUIENES SOMOS */
 
 .main__quienes-somos {
@@ -185,24 +185,9 @@ h2 {
     row-gap: 15px;
     padding: 20px 20px 0 20px;
 }
-
-.container {
-    margin: 0px;
-}
-
-.patada-roja {
-    grid-area: patada-roja;
-    background-image: url("../imagenes/patada-galeria.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size:cover;
-    grid-column: 1/2;
-    grid-row: 1/3;
-}
-
 .yo-claudio {
     grid-area: yo-claudio;
-    background-image: url("../imagenes/yoclaudio-galeria.png");
+    background-image: url("../imagenes/img1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +198,7 @@ h2 {
 
 .patadita {
     grid-area: patadita;
-    background-image: url("../imagenes/patadita.png");
+    background-image: url("../imagenes/img2.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -226,10 +211,23 @@ h2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../imagenes/trofeo.png");
+    background-image: url("../imagenes/img3.jpg");
     grid-column: 3/4;
     grid-row: 2/3;
 }
+
+
+.patada-roja {
+    grid-area: patada-roja;
+    background-image: url("../imagenes/img4.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+
 
 
 
@@ -266,6 +264,7 @@ h2 {
 .img__formulario {
     width: 400px;
     height: 400px;
+    
 }
 
 .btn-outline-success {
@@ -483,6 +482,12 @@ h2 {
     .mb-3 {
         width: 70vw;
     }
+
+    .footer__indice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* media querie de celular*/
@@ -634,30 +639,10 @@ h2 {
     }
 
                 /* FOOTER */
-    footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .footer__indice {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        list-style: none;
-    }
-    .footer__redes {
-        grid-column: 1/2;
-        grid-row: 2/3;
+    .footer__indice{
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-    .footer__derechos {
-        font-size: 25px;
-        grid-column: 1/2;
-        grid-row: 3/4;
-        display: flex;
-        justify-content: flex-end;
     }
 }
 
