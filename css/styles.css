@@ -21,9 +21,6 @@ header {
     padding: 20px 0px 60px 0px;
 }
 
-.header__nav {
-    display: flex;
-}
 .navbar-expand-lg{
     padding: 0px;
 }
@@ -46,29 +43,10 @@ header {
     background-color: white;
 }
 
-
-/* p {
-    font-size: 40px;
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 20px 0 50px 10px;
-    font-style: italic;
-} */
-
-
-
-/* .footer__indice {
-    grid-area: indice;
-    padding: 30px;
-    list-style: none;
-    padding-bottom: 10px;
-} */
-
 a {
     color: white;
     font-size: 20px;
 }
-
-
 
 .ala::after {
     content: "|";
@@ -76,8 +54,6 @@ a {
     height: auto;
     padding-left: 6px;
 }
-
-
 
 .footer__logos {
     width: 50px;
@@ -107,20 +83,6 @@ a {
     align-items: center;
 }
 
-.lista__desordenada {
-    text-decoration: none;
-    font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px 0 20px 30px;
-}
-
-.header__lista {
-    display: flex;
-    list-style: none;
-    padding: 0 16px;
-}
-
-
 .nav-item:hover {
     transform:scale(1.1, 1.1);
     transition: all 1s;
@@ -137,8 +99,6 @@ a {
     text-decoration: dotted;
     font-size: 20px;
 }
-
-
 
 /* QUIENES SOMOS */
 
@@ -299,17 +259,7 @@ h2 {
     padding: 20px 0 0 16px;
     font-size: 35px;
 }
-.titulo--azul {
-    padding: 10px;
-}
-.titulo__azul {
-    font-size: 20px;
-    padding: 10px 0 10px 16px;
-}
 
-.casillero__boton {
-    padding: 20px 0 300px 16px;
-}
 
 /* media querie de tablet */
 @media   (min-width: 576px) and (max-width: 992px) {
@@ -327,12 +277,11 @@ h2 {
     .navbar-expand-lg{
         padding: 0px;
     }
-    
+    .ala::after {
+        display: none;
+    }
     .container-fluid {
         padding: 0px 0px;
-    }
-    header {
-        position: static;
     }
     .header__lista {
         flex-direction: column;
@@ -375,27 +324,7 @@ h2 {
 
                 /* INDEX */
 
-    .imagen__foto--portada {
-        width: 90vw;
-        height: auto;
-        padding: 20px 0 0 0;
-        border: 0px double white;
-        margin: 0px;
-    }
-    .galeria {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .galeria__img--futbol {
-        width: 80vw;
-        height: auto;
-        padding: 20px 0px 0px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
                 /* QUIENES SOMOS */
     .main__quienes-somos {
         display: flex;
@@ -464,16 +393,6 @@ h2 {
         padding: 20px 0 0 16px;
         font-size: 35px;
     }
-    .titulo--azul {
-        padding: 10px;
-    }
-    .titulo__azul {
-        font-size: 20px;
-        padding: 10px 0 10px 16px;
-    }
-    .casillero__boton {
-        padding: 20px 0 100px 16px;
-    }
 
     .formulario__imagen {
         display: none;
@@ -501,6 +420,9 @@ h2 {
         width: 100%;
         padding: 20px 0px 60px 0px;
     }
+    .ala::after {
+        display: none;
+    }
     .nav {
         padding-top: 20px;
     }
@@ -518,9 +440,6 @@ h2 {
         display: inline;
         height: 80px;
         width: 80px;
-    }
-    header {
-        position: static;
     }
                 /* GALERIA */
     .galeria__grid {
@@ -564,27 +483,7 @@ h2 {
         border: solid 15px rgb(0, 47, 157);
         background-color: white;
     }
-    .galeria {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .imagen__foto--portada {
-        width: 350px;
-        height: auto;
-        padding: 20px 0 0 0;
-        border: 0px double white;
-        margin: 0px;
-    }
-    .galeria__img--futbol {
-        width: 350px;
-        height: auto;
-        padding: 20px 0px 0px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
                 /* QUIENES SOMOS */
     .main__quienes-somos {
         display: flex;
@@ -617,17 +516,6 @@ h2 {
     .main__titulo--formulario {
         padding: 20px 0 0 16px;
         font-size: 35px;
-    }
-    .titulo--azul {
-        padding: 10px;
-    }
-    .titulo__azul {
-        font-size: 20px;
-        padding: 10px 0 10px 16px;
-    }
-    
-    .casillero__boton {
-        padding: 20px 0 100px 16px;
     }
 
     .formulario__imagen {
