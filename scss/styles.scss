@@ -1,0 +1,21 @@
+@import "header";
+@import "index";
+@import "quienes-somos";
+@import "galeria";
+@import "formato";
+@import "contacto";
+@import "footer";
+@import "mediaquerie";
+@import "variables";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(194, 225, 253);
+}
+
+
+

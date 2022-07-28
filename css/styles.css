@@ -1,538 +1,341 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    background-color: rgb(194, 225, 253);
-}
-
 header {
-    background-color:rgba(144, 255, 101, 0.645);
-}
-
-
-
- /* indux */
-
-.pelota__futbol {
-    height: 95vh;
-    width: 100%;
-    padding: 20px 0px 60px 0px;
-}
-
-.navbar-expand-lg{
-    padding: 0px;
-}
-
-.container-fluid {
-    padding: 0px 0px;
-}
+  background-color: rgba(144, 255, 101, 0.645); }
 
 .header__logo {
-    height: 70px;
-    width: 60px;
-    padding: 10px 0 10px 6px;
-}
+  height: 70px;
+  width: 60px;
+  padding: 10px 0 10px 6px; }
 
-.main__titulo--inicio {
-    font-size: 50px;
-    text-align: center;
-    padding: 20px 0;
-    border: solid 15px rgb(79, 62, 255);
-    background-color: white;
-}
+.header__nav {
+  padding-top: 0px; }
 
-a {
-    color: white;
-    font-size: 20px;
-}
-
-.ala::after {
+.header .header__ala {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header .header__ala:after {
     content: "|";
     width: 10px;
     height: auto;
-    padding-left: 6px;
-}
+    padding-left: 6px; }
 
-.footer__logos {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5px;
-}
+.header .header__item {
+  padding-left: 15px; }
+  .header .header__item:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s; }
 
-.columnas {
-    padding: 0 20px 0 20pxf;
-}
+.header .navbar-expand-lg {
+  padding: 0px; }
 
-.footer__logos:hover{
-    transform:scale(1.1, 1.1);
-    transition: all 1s;
-}
+.header .container-fluid {
+  padding: 0px 0px; }
 
-.ala {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.main__futbol {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px 0;
+  border: solid 15px #4f3eff;
+  background-color: white; }
+  .main__futbol-portada {
+    height: 95vh;
+    width: 100%;
+    padding: 20px 0px 60px 0px; }
 
-.nav-item:hover {
-    transform:scale(1.1, 1.1);
-    transition: all 1s;
-}
-
-.nav {
-    padding-top: 0px;
-}
-.nav-item {
-    padding-left: 15px;
-}
-.header__item a {
-    color: rgb(255, 255, 255);
-    text-decoration: dotted;
-    font-size: 20px;
-}
-
-/* QUIENES SOMOS */
-
-.main__quienes-somos {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-.quienes__somos--galeria {
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; }
+  .main__galeria {
     height: 250px;
     width: 250px;
-    padding: 0 0 20px;
-}
-
-.main__titulo--rojo {
-    padding: 0 0 100px 0;
-}
-
-.main__titulo--somos {
+    padding: 0 0 20px; }
+  .main__rojo {
+    padding: 0 0 100px 15px; }
+  .main__somos {
     font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 20px;
-    text-decoration:underline 10px;
-}
-
-h2 {
+    text-decoration: underline 10px; }
+  .main h2 {
     font-size: 30px;
     padding: 15px;
-    font-style: italic;
-}
-
-/* GALERIA */
-
+    font-style: italic; }
 
 .galeria__grid {
-    display: grid;
-    width: 96vw;
-    height: 120vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 15px;
-    row-gap: 15px;
-    padding: 20px 20px 0 20px;
-}
-.yo-claudio {
+  display: grid;
+  width: 96vw;
+  height: 120vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding: 20px 20px 0 20px; }
+  .galeria__grid .yo-claudio {
     grid-area: yo-claudio;
     background-image: url("../imagenes/img1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 3/4;
-    grid-row: 1/2;
-
-}
-
-.patadita {
+    grid-row: 1/2; }
+  .galeria__grid .patadita {
     grid-area: patadita;
     background-image: url("../imagenes/img2.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    grid-row: 1/3;
-}
-
-.cef {
+    grid-row: 1/3; }
+  .galeria__grid .cef {
     grid-area: cef;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../imagenes/img3.jpg");
     grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-
-.patada-roja {
+    grid-row: 2/3; }
+  .galeria__grid .patada-roja {
     grid-area: patada-roja;
     background-image: url("../imagenes/img4.jpg");
     background-position: top;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     grid-column: 1/2;
-    grid-row: 1/3;
-}
-
-
-
-
-
-/* FORMATO */
-
-.main__categorias--texto {
-    padding: 0 0 100px 16px;
-    font-size: 25px;
-}
+    grid-row: 1/3; }
 
 .main__categorias {
-    font-size: 35px;
-    padding: 16px 0 0 16px;
-}
-
-.main__categorias--listas {
+  font-size: 35px;
+  padding: 16px 0 0 16px; }
+  .main__categorias--texto {
+    padding: 0 0 100px 16px;
+    font-size: 25px; }
+  .main__categorias--listas {
     padding: 0 0 100px 20px;
     font-size: 25px;
-    list-style: none;
-}
+    list-style: none; }
 
-/* FORMULARIO */
-
-.mb-3 {
-    width: 500px;
-}
-
-.formulario__uno {
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .formulario-3 {
+    width: 500px; }
+  .formulario__img {
+    width: 400px;
+    height: 400px; }
+  .formulario .main__boton {
+    margin: 10px 0 15px;
+    color: black;
+    border-color: black;
+    border: 3px solid; }
+    .formulario .main__boton:hover {
+      color: #146f00;
+      background-color: rgba(145, 255, 101, 0.701);
+      border: 6px solid;
+      transform: scale(1, 1); }
+  .formulario__imagen {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-.img__formulario {
-    width: 400px;
-    height: 400px;
-    
-}
-
-.btn-outline-success {
-    margin: 0 0 15px;
-    color: black;
-    border-color: black;
-    border: 3px solid;
-
-}
-
-.btn-outline-success:hover {
-    color: rgb(20, 111, 0);
-    background-color: rgb(144, 255, 101, 0.645);
-    border: 6px solid;
-    transform: scale(1.00 , 1.00);
-}
-
-
-.formulario__imagen {
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-}
-
-.formulario__texto{
+    padding-left: 100px; }
+  .formulario__texto {
     text-align: center;
-    padding: 10px 0 10px;
-}
+    padding: 10px 0 10px; }
 
-.main__titulo--formulario {
-    padding: 20px 0 0 16px;
-    font-size: 35px;
-}
-
+.footer__logos {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px; }
+  .footer__logos:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s; }
 
 /* media querie de tablet */
-@media   (min-width: 576px) and (max-width: 992px) {
-
-                /* BARRA DE NAVEGACION */
-    .header__nav {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .header__logo {
-        display: inline;
-        height: 80px;
-        width: 80px;
-    }
-    .navbar-expand-lg{
-        padding: 0px;
-    }
-    .ala::after {
-        display: none;
-    }
-    .container-fluid {
-        padding: 0px 0px;
-    }
-    .header__lista {
-        flex-direction: column;
-        flex-grow: 0;
-        justify-content: center;
-        align-items: center;
-    }
-                /* FOOTER */
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-    .footer__indice {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        list-style: none;
-    }
-    .footer__redes {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer__derechos {
-        font-size: 25px;
-        grid-column: 1/3;
-        grid-row: 2/3;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .texto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-                /* INDEX */
-
-
-                /* QUIENES SOMOS */
-    .main__quienes-somos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .quienes__somos--galeria {
-        height: 250px;
-        width: 250px;
-        padding: 0 0 20px;
-    }
-
-                /* GALERIA */
-    .galeria__grid {
-        display: grid;
-        width: 96vw;
-        height: 120vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 15px;
-        padding: 20px 0 20px 0;
-    }
-
-
-    .patada-roja {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        height: 50vh;
-    }
-    
-    .yo-claudio {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        height: 50vh;
-    }
-    
-    .patadita {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        height: 50vh;
-    }
-    
-    .cef {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        height: 50vh;
-    }
-                /* FORMATO */
-    .main__categorias {
-        font-size: 35px;
-        padding: 16px 0 0 16px;
-    }
+@media (min-width: 576px) and (max-width: 992px) {
+  /* BARRA DE NAVEGACION */
+  .header__nav {
+    flex-direction: column;
+    justify-content: center; }
+  .header__logo {
+    display: inline;
+    height: 80px;
+    width: 80px; }
+  .header .navbar-expand-lg {
+    padding: 0px; }
+  .header__ala::after {
+    display: none; }
+  .header .container-fluid {
+    padding: 0px 0px; }
+  .header__lista {
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center; }
+  /* FOOTER */
+  .footer__texto {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer__indice {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* QUIENES SOMOS */
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .main__galeria {
+      height: 250px;
+      width: 250px;
+      padding: 0 0 20px; }
+  /* GALERIA */
+  .galeria__grid {
+    display: grid;
+    width: 96vw;
+    height: 120vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    padding: 20px 0 20px 0; }
+    .galeria__grid .patada-roja {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      height: 50vh; }
+    .galeria__grid .yo-claudio {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      height: 50vh; }
+    .galeria__grid .patadita {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      height: 50vh; }
+    .galeria__grid .cef {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      height: 50vh; }
+  /* FORMATO */
+  .main__categorias {
+    font-size: 35px;
+    padding: 16px 0 0 16px; }
     .main__categorias--listas {
-        padding: 0 0 0 20px;
-        font-size: 25px;
-        list-style: none;
-    }
+      padding: 0 0 0 20px;
+      font-size: 25px;
+      list-style: none; }
     .main__categorias--texto {
-        padding: 0 0 100px 16px;
-        font-size: 25px;
-    }
-                /* CONTACTO */
-    .main__titulo--formulario {
-        padding: 20px 0 0 16px;
-        font-size: 35px;
-    }
-
-    .formulario__imagen {
-        display: none;
-    }
-
-    .mb-3 {
-        width: 70vw;
-    }
-
-    .footer__indice{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
+      padding: 0 0 100px 16px;
+      font-size: 25px; }
+  /* CONTACTO */
+  .formulario__imagen {
+    display: none; }
+  .formulario-3 {
+    width: 70vw; } }
 
 /* media querie de celular*/
-@media   (min-width: 320px) and (max-width: 575px) {
-                /* BARRA DE NAVEGACION */
-    .nav-item {
-    padding-left: 0px;
-    }
-    .pelota__futbol {
-        height: 60vh;
-        width: 100%;
-        padding: 20px 0px 60px 0px;
-    }
-    .ala::after {
-        display: none;
-    }
-    .nav {
-        padding-top: 20px;
-    }
-    .header__nav {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .header__lista {
-        flex-direction: column;
-        flex-grow: 0;
-        justify-content: center;
-        align-items: center;
-    }
-    .header__logo {
-        display: inline;
-        height: 80px;
-        width: 80px;
-    }
-                /* GALERIA */
-    .galeria__grid {
-        display: grid;
-        width: 96vw;
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 15px;
-        padding: 20px 0 20px 0;
-    }
-
-    .container {
-        padding: 0px 0px;
-    }
-    .patada-roja {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        height: 60vh;
-    }
-    .yo-claudio {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        height: 50vh;
-    }
-    .patadita {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        height: 50vh;
-    }
-    .cef {
-        grid-column: 1/2;
-        grid-row: 4/5;
-        height: 50vh;
-    }
-                /* INDEX */
-    .main__titulo--inicio {
-        font-size: 50px;
-        text-align: center;
-        padding: 20px 0;
-        border: solid 15px rgb(0, 47, 157);
-        background-color: white;
-    }
-
-                /* QUIENES SOMOS */
-    .main__quienes-somos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .quienes__somos--galeria {
-        height: 250px;
-        width: 250px;
-        padding: 0 0 20px;
-    }
-                /* FORMATO */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* BARRA DE NAVEGACION */
+  .header__nav {
+    flex-direction: column;
+    justify-content: center; }
+  .header__lista {
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center; }
+  .header__logo {
+    display: inline;
+    height: 80px;
+    width: 80px; }
+  .header__ala::after {
+    display: none; }
+  .header__nav {
+    padding-top: 20px; }
+  .header__item {
+    padding-left: 0px; }
+  /* GALERIA */
+  .galeria__grid {
+    display: grid;
+    width: 96vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    padding: 20px 0 20px 0; }
+    .galeria__grid .patada-roja {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      height: 60vh; }
+    .galeria__grid .yo-claudio {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      height: 50vh; }
+    .galeria__grid .patadita {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      height: 50vh; }
+    .galeria__grid .cef {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      height: 50vh; }
+  .container {
+    padding: 0px 0px; }
+  /* INDEX */
+  .main__futbol {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+    border: solid 15px #002f9d;
+    background-color: white; }
+    .main__futbol-portada {
+      height: 60vh;
+      width: 100%;
+      padding: 20px 0px 60px 0px; }
+  /* QUIENES SOMOS */
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .main__galeria {
+      height: 250px;
+      width: 250px;
+      padding: 0 0 20px; }
+  /* FORMATO */
+  .main__categorias {
+    font-size: 35px;
+    padding: 16px 0 0 16px; }
     .main__categorias--texto {
-        padding: 0 0 100px 16px;
-        font-size: 25px;
-    }
-    
-    .main__categorias {
-        font-size: 35px;
-        padding: 16px 0 0 16px;
-    }
-    
+      padding: 0 0 100px 16px;
+      font-size: 25px; }
     .main__categorias--listas {
-        padding: 0 0 0 20px;
-        font-size: 25px;
-        list-style: none;
-    }
-                /* CONTACTO */
-    .main__titulo--formulario {
-        padding: 20px 0 0 16px;
-        font-size: 35px;
-    }
+      padding: 0 0 0 20px;
+      font-size: 25px;
+      list-style: none; }
+  /* CONTACTO */
+  .formulario__imagen {
+    display: none; }
+  .formulario-3 {
+    width: 70vw; }
+  /* FOOTER */
+  .footer__indice {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
-    .formulario__imagen {
-        display: none;
-    }
+* {
+  margin: 0px;
+  padding: 0px; }
 
-    .mb-3 {
-        width: 70vw;
-    }
-
-                /* FOOTER */
-    .footer__indice{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-
+body {
+  background-color: #c2e1fd; }

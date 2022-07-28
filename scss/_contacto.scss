@@ -1,0 +1,42 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-3 {
+    width: 500px;
+}
+    &__img {
+        width: 400px;
+        height: 400px;
+        
+    }
+    .main__boton {
+        margin: 10px 0 15px;
+        color: black;
+        border-color: black;
+        border: 3px solid;
+    &:hover {
+        color: rgb(20, 111, 0);
+        background-color: rgba(145, 255, 101, 0.701);
+        border: 6px solid;
+        transform: scale(1.00 , 1.00);
+    }
+    }
+    &__imagen {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    }
+
+    &__texto{
+    text-align: center;
+    padding: 10px 0 10px;
+    }
+}
+
+
+
+
+
