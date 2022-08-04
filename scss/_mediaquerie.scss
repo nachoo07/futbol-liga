@@ -169,7 +169,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 15px;
-    padding: 20px 0 20px 0;
+    padding-bottom: 20px;
 
     .patada-roja {
     grid-column: 1/2;
@@ -180,6 +180,7 @@
     grid-column: 1/2;
     grid-row: 3/4;
     height: 50vh;
+    
     }
     .patadita {
     grid-column: 1/2;
@@ -204,9 +205,12 @@ padding: 0px 0px;
     border: solid 15px rgb(0, 47, 157);
     background-color: white;
     &-portada {
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     padding: 20px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 }
 
