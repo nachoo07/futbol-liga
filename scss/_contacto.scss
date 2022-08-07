@@ -17,7 +17,7 @@
         border-color: black;
         border: 3px solid;
     &:hover {
-        color: rgb(20, 111, 0);
+        color: $color;
         background-color: rgba(145, 255, 101, 0.701);
         border: 6px solid;
         transform: scale(1.00 , 1.00);

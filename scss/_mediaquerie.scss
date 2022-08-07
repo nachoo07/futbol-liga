@@ -29,6 +29,17 @@
     }
     }
     
+        /* INDEX */
+        .main__futbol {
+            &-portada {
+            height: 100%;
+            width: 100%;
+            padding: 20px 0px 60px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        }
 
                 /* FOOTER */
 
@@ -68,9 +79,9 @@
         width: 96vw;
         height: 120vh;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto;
         row-gap: 15px;
-        padding: 20px 0 20px 0;
+        padding: 20px 0 20px 10px;
 
         .patada-roja {
         grid-column: 1/2;
@@ -164,10 +175,10 @@
     /* GALERIA */
     .galeria__grid {
     display: grid;
-    width: 96vw;
+    width: 90vw;
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     row-gap: 15px;
     padding-bottom: 20px;
 
@@ -199,13 +210,8 @@ padding: 0px 0px;
 
     /* INDEX */
     .main__futbol {
-    font-size: 50px;
-    text-align: center;
-    padding: 20px 0;
-    border: solid 15px rgb(0, 47, 157);
-    background-color: white;
     &-portada {
-    height: 50vh;
+    height: 100%;
     width: 100%;
     padding: 20px 0px 60px 0px;
     display: flex;
