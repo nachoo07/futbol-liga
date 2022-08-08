@@ -9,38 +9,38 @@
     padding: 20px 0px 40px 20px;
 
     .yo-claudio {
-    grid-area: yo-claudio;
-    background-image: url("../imagenes/img1.jpg");
-    @extend .background-img;
-    grid-column: 3/4;
-    grid-row: 1/2;
-    width: auto;
+        grid-area: yo-claudio;
+        background-image: url("../imagenes/img1.jpg");
+        @extend .background-img;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: auto;
 
 }
 
     .patadita {
-    grid-area: patadita;
-    background-image: url("../imagenes/img2.jpg");
-    @extend .background-img;
-    grid-column: 2/3;
-    grid-row: 1/3;
-    width: 100%;
+        grid-area: patadita;
+        background-image: url("../imagenes/img2.jpg");
+        @extend .background-img;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        width: 100%;
 }
 
     .cef {
-    grid-area: cef;
-    @extend .background-img;
-    background-image: url("../imagenes/img3.jpg");
-    grid-column: 3/4;
-    grid-row: 2/3;
+        grid-area: cef;
+        @extend .background-img;
+        background-image: url("../imagenes/img3.jpg");
+        grid-column: 3/4;
+        grid-row: 2/3;
 }
 
 
     .patada-roja {
-    grid-area: patada-roja;
-    background-image: url("../imagenes/img4.jpg");
-    @extend .background-img;
-    grid-column: 1/2;
-    grid-row: 1/3;
+        grid-area: patada-roja;
+        background-image: url("../imagenes/img4.jpg");
+        @extend .background-img;
+        grid-column: 1/2;
+        grid-row: 1/3;
 }
 }

@@ -30,16 +30,16 @@
     }
     
         /* INDEX */
-        .main__futbol {
-            &-portada {
-            height: 100%;
-            width: 100%;
-            padding: 20px 0px 60px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
+    .main__futbol {
+        &-portada {
+        height: 100%;
+        width: 100%;
+        padding: 20px 0px 60px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         }
+    }
 
                 /* FOOTER */
 
@@ -83,7 +83,7 @@
         row-gap: 15px;
         padding: 20px 0 20px 10px;
 
-        .patada-roja {
+    .patada-roja {
         grid-column: 1/2;
         grid-row: 1/2;
         height: 50vh;
@@ -124,7 +124,7 @@
         padding: 0 0 100px 16px;
         font-size: 25px;
     }
-    }
+}
 
                 /* CONTACTO */
 
@@ -146,77 +146,76 @@
 
     .header {
     &__nav {
-    flex-direction: column;
-    justify-content: center;
+        flex-direction: column;
+        justify-content: center;
     }
     &__lista {
-    flex-direction: column;
-    flex-grow: 0;
-    justify-content: center;
-    align-items: center;
+        flex-direction: column;
+        flex-grow: 0;
+        justify-content: center;
+        align-items: center;
     }
     &__logo {
-    display: inline;
-    height: 80px;
-    width: 80px;
+        display: inline;
+        height: 80px;
+        width: 80px;
     }
     &__ala::after {
-    display: none;
+        display: none;
     }
     &__nav {
-    padding-top: 20px;
+        padding-top: 20px;
     }
     &__item {
-    padding-left: 0px;
+        padding-left: 0px;
     }
 }
 
 
     /* GALERIA */
     .galeria__grid {
-    display: grid;
-    width: 90vw;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    row-gap: 15px;
-    padding-bottom: 20px;
+        display: grid;
+        width: 90vw;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 15px;
+        padding-bottom: 20px;
 
     .patada-roja {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    height: 60vh;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 60vh;
     }
     .yo-claudio {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    height: 50vh;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 50vh;
     
     }
     .patadita {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    height: 50vh;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 50vh;
     }
     .cef {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    height: 50vh;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 50vh;
     }
 }
-.container {
-padding: 0px 0px;
-}
+    .container {
+        padding: 0px 0px;
+    }
 
     /* INDEX */
     .main__futbol {
     &-portada {
-    height: 100%;
-    width: 100%;
-    padding: 20px 0px 60px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 20px 0px 60px 0px;
+        display: flex;
+        @include flex(center, center);
     }
 }
 
@@ -229,9 +228,9 @@ padding: 0px 0px;
     align-items: center;
 
     &__galeria {
-    height: 250px;
-    width: 250px;
-    padding: 0 0 20px;
+        height: 250px;
+        width: 250px;
+        padding: 0 0 20px;
     }
     &__somos {
         font-size: 40px;
@@ -242,17 +241,17 @@ padding: 0px 0px;
 
     /* FORMATO */
     .main__categorias {
-    font-size: 35px;
-    padding: 16px 0 0 16px;
+        font-size: 35px;
+        padding: 16px 0 0 16px;
 
     &--texto {
-    padding: 0 0 100px 16px;
-    font-size: 25px;
+        padding: 0 0 100px 16px;
+        font-size: 25px;
     }
     &--listas {
-    padding: 0 0 0 20px;
-    font-size: 25px;
-    list-style: none;
+        padding: 0 0 0 20px;
+        font-size: 25px;
+        list-style: none;
     }
 }
 
@@ -260,17 +259,16 @@ padding: 0px 0px;
 
     .formulario {
     &__imagen {
-    display: none;
-}
+        display: none;
+    }
     &-3 {
-    width: 70vw;
-}
+        width: 70vw;
+    }
 }
 
     /* FOOTER */
-.footer__indice{
-display: flex;
-justify-content: center;
-align-items: center;
-}
+    .footer__indice{
+        display: flex;
+        @include flex(center, center);
+    }
 }

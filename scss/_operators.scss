@@ -3,3 +3,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@mixin flex($justify, $align) {
+    justify-content: $justify;
+    align-items: $align;
+}
+

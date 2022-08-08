@@ -6,9 +6,13 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
-    &:hover{
-    transform:scale(1.1, 1.1);
-    transition: all 1s;
-    
+        &:hover{
+            transform:scale(1.1, 1.1);
+            transition: all 1s;
+    }
 }
+
+body {
+    background-color: rgb(194, 225, 253);
 }
+

@@ -1,7 +1,6 @@
 .formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        @include flex(center, center);
 
     &-3 {
     width: 500px;
@@ -25,9 +24,8 @@
     }
     &__imagen {
         display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
+        @include flex(center, center);
+        padding-left: 100px;
     }
 
     &__texto{
