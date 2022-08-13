@@ -32,12 +32,11 @@
         /* INDEX */
     .main__futbol {
         &-portada {
-        height: 100%;
+        height: 400px;
         width: 100%;
-        padding: 20px 0px 60px 0px;
+        padding: 20px 0px 20px 0px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center);
         }
     }
 
@@ -46,14 +45,12 @@
     .footer {
     &__texto {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center);
     }
 
     &__indice{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center);
     }
     }
 
@@ -70,29 +67,32 @@
         width: 250px;
         padding: 0 0 20px;
     }
+    &__rojo {
+        padding: 0px 10px 0px 10px;
+    }
     }
 
 
                 /* GALERIA */
     .galeria__grid {
         display: grid;
-        width: 96vw;
-        height: 120vh;
+        width: 100%;
+        height: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        row-gap: 15px;
-        padding: 20px 0 20px 10px;
+        padding: 0px 10px 10px 10px;
+
 
     .patada-roja {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 50vh;
+        height: 100%;
     }
     
     .yo-claudio {
         grid-column: 1/2;
         grid-row: 2/3;
-        height: 50vh;
+        height: 100%;
     }
     
     .patadita {
@@ -113,16 +113,25 @@
                 /* FORMATO */
     .main__categorias {
         font-size: 35px;
-        padding: 16px 0 0 16px;
+
 
     &--listas {
-        padding: 0 0 0 20px;
+        padding: 0px 10px 0px 10px;
         font-size: 25px;
         list-style: none;
     }
     &--texto {
-        padding: 0 0 100px 16px;
+        padding: 0px 10px 0px 10px;
         font-size: 25px;
+    }
+    &--video {
+        width: 500px;
+        height: 300px;
+        padding: 0px 10px 10px 10px;
+    }
+    &--editor {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -136,6 +145,7 @@
     &-3 {
         width: 70vw;
     }
+
     }
 }
 
@@ -157,8 +167,8 @@
     }
     &__logo {
         display: inline;
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
     }
     &__ala::after {
         display: none;
@@ -210,12 +220,13 @@
 
     /* INDEX */
     .main__futbol {
-    &-portada {
-        height: 100%;
-        width: 100%;
-        padding: 20px 0px 60px 0px;
-        display: flex;
-        @include flex(center, center);
+        font-size: 35px;
+        &-portada {
+            height: 200px;
+            width: 310px;
+            padding: 10px 0px 10px 0px;
+            display: flex;
+            @include flex(center, center);
     }
 }
 
@@ -228,14 +239,17 @@
     align-items: center;
 
     &__galeria {
-        height: 250px;
-        width: 250px;
-        padding: 0 0 20px;
+        height: 225px;
+        width: 225px;
+        padding: 0px 0px 20px;
     }
     &__somos {
         font-size: 40px;
         text-align: center;
-        text-decoration:underline 5px;
+    }
+    &__rojo {
+        padding: 0px 10px 10px 10px;
+        font-size: 25px;
     }
 }
 
@@ -245,13 +259,24 @@
         padding: 16px 0 0 16px;
 
     &--texto {
-        padding: 0 0 100px 16px;
+        padding: 0px 10px 15px 10px;
         font-size: 25px;
+        font-style: italic;
     }
     &--listas {
         padding: 0 0 0 20px;
         font-size: 25px;
         list-style: none;
+        font-style: italic;
+    }
+    &--video {
+        width: 300px;
+        height: 200px;
+        padding: 0px 10px 10px 10px;
+    }
+    &--editor {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -263,6 +288,10 @@
     }
     &-3 {
         width: 70vw;
+    }
+    .main__boton {
+        margin: 10px 15px 15px;
+        padding: 0 20px;
     }
 }
 

@@ -10,15 +10,17 @@
         height: 400px;
         
     }
+
     .main__boton {
-        margin: 10px 0 15px;
+        margin: 10px 15px 15px;
         color: black;
         border-color: black;
         border: 3px solid;
+        padding: 0 50px;
     &:hover {
         color: $color;
-        background-color: rgba(145, 255, 101, 0.701);
-        border: 6px solid;
+        background-color: $color-footer-navbar;
+        border: 6px solid $color-footer-navbar;
         transform: scale(1.00 , 1.00);
     }
     }
@@ -31,6 +33,7 @@
     &__texto{
     text-align: center;
     padding: 10px 0 10px;
+    font-family: $letra-general;
     }
 }
 
