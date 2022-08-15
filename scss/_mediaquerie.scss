@@ -191,6 +191,7 @@
         grid-template-rows: auto;
         row-gap: 15px;
         padding-bottom: 20px;
+        
 
     .patada-roja {
         grid-column: 1/2;
@@ -223,7 +224,7 @@
         font-size: 35px;
         &-portada {
             height: 200px;
-            width: 310px;
+            width: 100%;
             padding: 10px 0px 10px 0px;
             display: flex;
             @include flex(center, center);
@@ -264,7 +265,7 @@
         font-style: italic;
     }
     &--listas {
-        padding: 0 0 0 20px;
+        padding: 0 0 10px 20px;
         font-size: 25px;
         list-style: none;
         font-style: italic;
